@@ -1,6 +1,14 @@
-# sample-apiserver
+# k8s-apiserver-aggregation-sample
 
 Demonstration of how to use the k8s.io/apiserver library to build a functional API server.
+
+- [Purpose](#purpose)
+- [Normal Build and Deploy](#normal-build-and-deploy)
+  - [Changes to the Types](#changes-to-the-types)
+  - [Authentication plugins](#authentication-plugins)
+  - [Build the binary and the container image](#build-the-binary-and-the-container-image)
+  - [Deploy to Kind cluster](#deploy-to-kind-cluster)
+- [Test that your setup has worked](#test-that-your-setup-has-worked)
 
 ## Purpose
 
