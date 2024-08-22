@@ -4,3 +4,6 @@ metadata:
   name: my-first-flunder
   labels:
     sample-label: "true"
+spec:
+  reference: another-flunder
+  referenceType: Flunder
