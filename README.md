@@ -52,15 +52,8 @@ import _ "k8s.io/client-go/plugin/pkg/client/auth"
 ```
 
 ### Build the binary and the container image
-
-Next we will want to create a new binary to both test we can build the server and to use for the container image.
-
-From the root of this repo, where ```main.go``` is located, run the following command:
-```
-GOOS=linux go build .
-cp ./sample-apiserver ./artifacts/simple-image/kube-sample-apiserver
-docker build -t tkxkd0159/kube-sample-apiserver:latest ./artifacts/simple-image
-docker push tkxkd0159/kube-sample-apiserver
+```sh
+./hack/build-image.sh [--push]
 ```
 
 ### Deploy to Kind cluster
