@@ -26,10 +26,8 @@ If you do decide to use this repository, then the recommended pattern is to fork
 
 If you change the API object type definitions in any of the
 `pkg/apis/.../types.go` files then you will need to update the files
-generated from the type definitions.  To do this, first
-[create the vendor directory if necessary](#when-using-go-111-modules)
-and then invoke `hack/update-codegen.sh` with `sample-apiserver` as
-your current working directory; the script takes no arguments.
+generated from the type definitions.  To do this, first create the vendor directory if necessary
+and then invoke `hack/update-codegen.sh` as your current working directory.
 
 ### Authentication plugins
 
