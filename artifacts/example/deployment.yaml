@@ -25,5 +25,13 @@ spec:
         image: tkxkd0159/kube-sample-apiserver:latest
         imagePullPolicy: IfNotPresent
         args: [ "--etcd-servers=http://localhost:2379" ]
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
       - name: etcd
         image: gcr.io/etcd-development/etcd:v3.5.15
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
